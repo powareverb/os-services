@@ -19,6 +19,7 @@ services:
 - waagent
 - virtualbox-tools
 - pingan-amc
+- k3s
 consoles:
 - alpine
 - centos
