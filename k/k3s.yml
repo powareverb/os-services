@@ -1,0 +1,14 @@
+# https://github.com/rancher/k3s/issues/73
+k3s:
+  image: rancher/k3s:v0.2.0-rc2
+  command: server --docker
+  volumes:
+    - /etc/rancher/k3s:/etc/rancher/k3s
+    - /var/lib/rancher/k3s:/var/lib/rancher/k3s:rshared
+    - /var/lib/docker:/var/lib/docker:rshared
+    - /var/run:/var/run
+    - /run:/run
+  privileged: true
+  net: host
+  pid: host
+  ipc: host
