@@ -8,7 +8,7 @@ k3s:
     #io.rancher.os.detach: "false"
     io.rancher.os.after: "network"
     # Disabled until we can get this working
-    io.rancher.os.scope: "system"
+    # io.rancher.os.scope: "system"
   volumes:
     - /etc/rancher/k3s:/etc/rancher/k3s
     - /var/lib/rancher/k3s:/var/lib/rancher/k3s:rshared
