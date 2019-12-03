@@ -2,7 +2,7 @@
 # https://hub.docker.com/r/rancher/k3s/tags
 k3s:
   image: ${REGISTRY_DOMAIN}/rancher/k3s:v1.0.0
-  command: server --docker
+  command: server --docker --no-flannel
   labels:
     io.rancher.os.detach: "false"
     io.rancher.os.after: "network"
