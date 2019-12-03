@@ -1,6 +1,7 @@
 # https://github.com/rancher/k3s/issues/73
+# https://hub.docker.com/r/rancher/k3s/tags
 k3s:
-  image: rancher/k3s:v0.2.0-rc2
+  image: rancher/k3s:v1.0.0
   command: server --docker
   volumes:
     - /etc/rancher/k3s:/etc/rancher/k3s
